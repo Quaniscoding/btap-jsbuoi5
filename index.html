@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header"><h1>🏫 Quản lý tuyển sinh</h1></div>
+            <div class="card-body row">
+              <div class="form-group w-100">
+                <h4>Điểm chuẩn</h4>
+                <input id="diemChuan" type="number" class="form-control" />
+              </div>
+              <div class="form-group w-100">
+                <h4>Chọn khu vực(A, B, C)</h4>
+                <input id="khuVuc" type="text" class="form-control" />
+              </div>
+              <div class="form-group w-100">
+                <h4>Chọn đối tượng(1, 2 ,3)</h4>
+                <input id="doiTuong" type="number" class="form-control" />
+              </div>
+              <div class="form-group w-100">
+                <h4>Điểm môn thứ 1</h4>
+                <input id="mon1" type="number" class="form-control" />
+              </div>
+              <div class="form-group w-100">
+                <h4>Điểm môn thứ 2</h4>
+                <input id="mon2" type="number" class="form-control" />
+              </div>
+              <div class="form-group w-100">
+                <h4>Điểm môn thứ 3</h4>
+                <input id="mon3" type="number" class="form-control" />
+              </div>
+            </div>
+              <button id="timKetQua" class="btn btn-success">
+               Kết quả
+              </button>
+            </div>
+            <div id="thongBaoKetQua" class="card-footer text-muted"></div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header"><h1>🔋 Tính tiền điện</h1></div>
+            <div class="card-body row">
+              <div class="form-group w-100">
+                <h4>Nhập tên</h4>
+                <input id="ten" type="text" class="form-control" />
+              </div>
+              <div class="form-group w-100">
+                <h4>Nhập số KW</h4>
+                <input id="soKw" type="number" class="form-control" />
+              <button id="tinhTienDien" class="btn btn-success">
+              Tính tiền điện
+              </button>
+            </div>
+            <div id="thongBaoTienDien" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header"><h1>💰 Tính thuế thu nhập cá nhân</h1></div>
+            <div class="card-body row">
+              <div class="form-group w-100">
+                <h4>Nhập họ tên</h4>
+                <input id="hoTen" type="text" class="form-control" />
+              </div>
+              <div class="form-group w-100">
+                <h4>Tổng số thu nhập năm</h4>
+                <input id="tongThuNhap" type="number" class="form-control" />
+              </div>
+              <div class="form-group w-100">
+                <h4>Số người phụ thuộc</h4>
+                <input id="soNguoi" type="number" class="form-control" />
+              </div>
+              <button id="tinhTienThue" class="btn btn-success">
+              Tính tiền thuế
+              </button>
+            </div>
+            <div id="thongBaoTienThue" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header"><h1>🕸️ Tính tiền cáp</h1>
+            </div>
+            <div class="card-body row">
+              <div class="form-group w-100">
+                <h4>Chọn loại Khách hàng</h4>
+                <select id="mySelect" onclick="myFunction()">
+                  <option >Chọn loại khách hàng</option>
+                  <option value="nhaDan">Nhà Dân</option>
+                  <option value="doanhNghiep">Doanh Nghiệp</option>
+                </select>
+                  <div id="ketNoi"></div>
+              </div>
+              <div class="form-group w-100">
+                <h4>Nhập mã khách hàng</h4>
+                <input id="maKhachHang" type="number" class="form-control" />
+              </div>
+              <div class="form-group w-100">
+                <h4>Số kênh cao cấp</h4>
+                <input id="soKenhCaoCap" type="number" class="form-control" />
+              </div>
+              <button id="tinhTienCap" class="btn btn-success">
+              Tính tiền cáp
+              </button>
+            </div>
+            <div id="thongBaoTienCap" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <script>
+     
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="./main.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
