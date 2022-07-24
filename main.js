@@ -3,66 +3,132 @@ function tinhDiem(mon1, mon2, mon3, diemChuan, khuVuc, doiTuong) {
     var ketQua = "";
     var diem = mon1 + mon2 + mon3;
     // Đối tượng 1
-    if (diem >= diemChuan && khuVuc == "A" && doiTuong == "1") {
+    if (khuVuc == "A" && doiTuong == "1") {
         diem += 2 + 2.5;
-        ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
-        return ketQua;
+        if (diem < diemChuan) {
+            ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+            return ketQua;
+        }
     }
-    if (diem >= diemChuan && khuVuc == "B" && doiTuong == "1") {
+    if (khuVuc == "B" && doiTuong == "1") {
         diem += 1 + 2.5;
         ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
         return ketQua;
     }
+    if (khuVuc == "C" && doiTuong == "1") {
+        diem += 0.5 + 2.5;
+        if (diem < diemChuan) {
+            ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+            return ketQua;
+        }
+    }
+    // Đối tượng 2
+    if (khuVuc == "A" && doiTuong == "2") {
+        diem += 2 + 1.5;
+        if (diem < diemChuan) {
+            ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+            return ketQua;
+        }
+    }
+    if (khuVuc == "B" && doiTuong == "2") {
+        diem += 1 + 1.5;
+        if (diem < diemChuan) {
+            ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+            return ketQua;
+        }
+    }
+    if (khuVuc == "C" && doiTuong == "2") {
+        diem += 0.5 + 1.5; 3
+        if (diem < diemChuan) {
+            ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+            return ketQua;
+        }
+    }
+    // Đối tượng 3
+    if (khuVuc == "A" && doiTuong == "3") {
+        diem += 2 + 1;
+        if (diem < diemChuan) {
+            ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+            return ketQua;
+        }
+    }
+    if (khuVuc == "B" && doiTuong == "3") {
+        diem += 1 + 1;
+        if (diem < diemChuan) {
+            ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+            return ketQua;
+        }
+    }
+    if (khuVuc == "C" && doiTuong == "3") {
+        diem += 0.5 + 1;
+        if (diem < diemChuan) {
+            ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+            return ketQua;
+        }
+    }
+
+
+    // đậu
+    // Đối tượng 1
+    if (diem >= diemChuan && khuVuc == "A" && doiTuong == "1") {
+        diem += 2 + 2.5;
+        ketQua = "👉Bạn đã đậu. Tổng điểm: " + diem;
+        return ketQua;
+    }
+    if (diem >= diemChuan && khuVuc == "B" && doiTuong == "1") {
+        diem += 1 + 2.5;
+        ketQua = "👉Bạn đã đậu. Tổng điểm: " + diem;
+        return ketQua;
+    }
     if (diem >= diemChuan && khuVuc == "C" && doiTuong == "1") {
         diem += 0.5 + 2.5;
-        ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+        ketQua = "👉Bạn đã đậu. Tổng điểm: " + diem;
         return ketQua;
     }
     // Đối tượng 2
     if (diem >= diemChuan && khuVuc == "A" && doiTuong == "2") {
         diem += 2 + 1.5;
-        ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+        ketQua = "👉Bạn đã đậu. Tổng điểm: " + diem;
         return ketQua;
     }
     if (diem >= diemChuan && khuVuc == "B" && doiTuong == "2") {
         diem += 1 + 1.5;
-        ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+        ketQua = "👉Bạn đã đậu. Tổng điểm: " + diem;
         return ketQua;
     }
     if (diem >= diemChuan && khuVuc == "C" && doiTuong == "2") {
         diem += 0.5 + 1.5; 3
-        ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+        ketQua = "👉Bạn đã đậu. Tổng điểm: " + diem;
         return ketQua;
     }
     // Đối tượng 3
     if (diem >= diemChuan && khuVuc == "A" && doiTuong == "3") {
         diem += 2 + 1;
-        ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+        ketQua = "👉Bạn đã đậu. Tổng điểm: " + diem;
         return ketQua;
     }
     if (diem >= diemChuan && khuVuc == "B" && doiTuong == "3") {
         diem += 1 + 1;
-        ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+        ketQua = "👉Bạn đã đậu. Tổng điểm: " + diem;
         return ketQua;
     }
     if (diem >= diemChuan && khuVuc == "C" && doiTuong == "3") {
         diem += 0.5 + 1;
-        ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
+        ketQua = "👉Bạn đã đậu. Tổng điểm: " + diem;
         return ketQua;
     }
 
 
-
-
+    if (diem >= diemChuan) {
+        ketQua = "👉Bạn đã đậu. Tổng điểm: " + diem;
+        return ketQua;
+    }
     // rớt
     if (mon1 <= "0" || mon2 <= "0" || mon3 <= "0") {
         ketQua = "👉Bạn đã rớt. Do có điểm nhỏ hơn hoặc bằng 0";
         return ketQua;
     }
-    if (diem >= diemChuan) {
-        ketQua = "👉Bạn đã đậu. Tổng điểm: " + diem;
-        return ketQua;
-    }
+
     if (diem <= diemChuan) {
         ketQua = "👉Bạn đã rớt. Tổng điểm: " + diem;
         return ketQua;
